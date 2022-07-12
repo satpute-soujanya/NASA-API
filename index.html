@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NASA | Live API</title>
+
+    <!-- <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon_io/site.webmanifest" /> -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://s2.googleusercontent.com/s2/favicons?domain=www.nasa.gov"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- loader -->
+    <div class="loader hidden">
+      <img src="./rocket.svg" alt="Rocket loading animation" />
+    </div>
+    <!-- Container -->
+    <div class="container">
+      <div class="navigation_container">
+        <div class="navigation_items" id="resultNav">
+          <h3 class="clickable" onclick="updateImagesToDOM('favourites')">
+            Favorites
+          </h3>
+          <h3>&nbsp;&nbsp;&nbsp;&nbsp; • &nbsp;&nbsp;&nbsp;&nbsp;</h3>
+          <h3 class="clickable" onclick="getNasaImages()">Load More</h3>
+        </div>
+        <div class="navigation_items hidden" id="favoriteNav">
+          <h3 class="clickable" onclick="getNasaImages()">Load more Image</h3>
+        </div>
+      </div>
+      <div class="images_container">
+        <!-- <div class="card">
+          <a href="" title="View full image" target="_blank">
+            <img
+              src="https://apod.nasa.gov/apod/image/2207/SaharaAndromeda_Coy_6135.jpg"
+              alt="NASA picture of the Day"
+              class="card_img_top"
+            />
+          </a>
+          <div class="card_body">
+            <h5 class="card_title">Title of Image</h5>
+            <p class="clickable">Add to favourites</p>
+            <p class="card_text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sequi
+              blanditiis iusto beatae. Explicabo officiis corrupti nostrum nihil
+              mollitia nulla a reprehenderit, fugit iste iure distinctio dolore
+              voluptatum nesciunt. Eveniet!Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Sit sequi blanditiis iusto beatae.
+              Explicabo officiis corrupti nostrum nihil mollitia nulla a
+              reprehenderit, fugit iste iure distinctio dolore voluptatum
+              nesciunt. Eveniet!
+            </p>
+            <small class="text_muted">
+              <strong>12-12-2020</strong>
+              <span>Copywrite info</span>
+            </small>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <div class="save_confirmed" hidden><h1>Added!</h1></div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
